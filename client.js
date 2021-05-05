@@ -13,6 +13,26 @@ const connect = function() {
  
   conn.on("connect", () => {
     conn.write("Name: KEV");
+    setTimeout(() => {
+      conn.write("Move: left");
+    }, 320);
+
+    setTimeout(() => {
+      conn.write("Move: left");
+    }, 200);
+
+    setTimeout(() => {
+      conn.write("Move: left");
+    }, 200);
+
+    setTimeout(() => {
+      conn.write("Move: down");
+    }, 200);
+
+    setTimeout(() => {
+      conn.write("Move: down");
+    }, 200);
+
   });
 
   return conn;
